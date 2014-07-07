@@ -1,6 +1,6 @@
 {
   "name": "angular-gs-to-camel-case",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Turns snake_cased string into a camelCased one",
   "main": "./build/angular-gs-to-camel-case.js",
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "https://github.com/garbles/angular-gs-to-camel-case.git"
   },
-  "keywords": ["camel","case","angular"],
+  "keywords": [
+    "camel",
+    "case",
+    "angular"
+  ],
   "author": "Gabriel Scholz <info@garbl.es>",
   "license": "MIT",
   "bugs": {
