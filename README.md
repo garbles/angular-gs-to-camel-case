@@ -15,3 +15,11 @@ Include the package in your application:
 ```javascript
 angular.module('app', ['gs.to-camel-case']);
 ```
+
+Pass in snaked_cased strings and receive back camelCased ones
+
+```javascript
+app.controller('Ctrl', function (toCamelCase) {
+  toCamelCase('gabe_gabe') // => gabeGabe
+});
+```
