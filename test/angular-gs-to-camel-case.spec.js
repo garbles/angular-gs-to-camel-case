@@ -1,22 +1,15 @@
 describe('angular-gs-to-camel-case', function () {
   beforeEach(module('gs.to-camel-case'));
 
-  var $scope;
+  var toCamelCase;
 
-  beforeEach(inject(function ($rootScope) {
-    $scope = $rootScope.$new();
+  beforeEach(inject(function (_toCamelCase_) {
+    toCamelCase = _toCamelCase_;
   }));
 
-  // happy path(s)
-  it('', function () {
+  it('turns snake_cased strings into camelCased ones', function () {
+    expect(toCamelCase('gabe_gabe')).toEqual('gabeGabe');
+    expect(toCamelCase('gabegabe')).toEqual('gabegabe');
+    expect(toCamelCase('this_is_pretty_long')).toEqual('thisIsPrettyLong');
   });
-
-  // null input path
-  it('', function () {
-  });
-
-  // wrong type path
-  it('', function () {
-  });
-
 });

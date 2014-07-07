@@ -59,8 +59,10 @@ gulp.task('lint', lint);
 
 // run specs for either build or source files
 var specFiles = [
+  'bower_components/lodash/dist/lodash.js',
   'bower_components/angular/angular.js',
   'bower_components/angular-mocks/angular-mocks.js',
+  'bower_components/angular-gs-capitalize/build/angular-gs-capitalize.js',
   'test/**/*.spec.js',
   'test/*.spec.js'
 ];
