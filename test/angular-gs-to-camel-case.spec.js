@@ -11,5 +11,6 @@ describe('angular-gs-to-camel-case', function () {
     expect(toCamelCase('gabe_gabe')).toEqual('gabeGabe');
     expect(toCamelCase('gabegabe')).toEqual('gabegabe');
     expect(toCamelCase('this_is_pretty_long')).toEqual('thisIsPrettyLong');
+    expect(toCamelCase('_long')).toEqual('long');
   });
 });
