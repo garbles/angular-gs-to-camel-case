@@ -18,7 +18,9 @@ function (capitalize) {
   }
 
   function split (str) {
-    return str.split('_');
+    var splitStrings = str.split('_');
+    _.remove(splitStrings, function(x) { return !x; });
+    return splitStrings;
   }
 
   function lowerCase (str) {
